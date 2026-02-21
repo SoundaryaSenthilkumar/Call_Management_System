@@ -1,0 +1,238 @@
+.emp-container {
+  padding: 20px;
+  color: #fff;
+  max-width: 100%;
+  overflow: auto;
+  background: rgba(255, 255, 255, 0.10);
+  backdrop-filter: blur(20px);
+  border-radius: 18px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.28);
+  animation: fadeIn 0.4s ease-in-out;
+}
+
+.emp-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+/* Search and Filter Section */
+.emp-search-filter {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.emp-search-input {
+  flex: 1;
+  min-width: 250px;
+  padding: 12px;
+  border-radius: 10px;
+  border: none;
+  background: rgba(255,255,255,0.18);
+  color: white;
+  font-size: 14px;
+  outline: none;
+}
+
+.emp-search-input::placeholder {
+  color: #ddd;
+}
+
+.emp-filter-select {
+  padding: 12px;
+  border-radius: 10px;
+  border: none;
+  background: rgba(255,255,255,0.18);
+  color: #000;
+  font-size: 14px;
+  outline: none;
+  cursor: pointer;
+}
+
+.emp-clear-btn {
+  padding: 12px 20px;
+  background: rgba(239, 68, 68, 0.8);
+  border: none;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.emp-clear-btn:hover {
+  background: rgba(239, 68, 68, 1);
+}
+
+.emp-add-btn {
+  padding: 10px 20px;
+  background: rgba(16, 185, 129, 0.4);
+  backdrop-filter: blur(12px);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.emp-add-btn:hover {
+  background: rgba(16, 185, 129, 0.7);
+}
+
+/* Form Section */
+.emp-form {
+  background: rgba(255,255,255,0.14);
+  backdrop-filter: blur(20px);
+  padding: 28px;
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.18);
+  margin-bottom: 25px;
+}
+
+.emp-grid {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.emp-input,
+.emp-select {
+  padding: 14px;
+  border-radius: 10px;
+  border: none;
+  background: rgba(255,255,255,0.18);
+  backdrop-filter: blur(10px);
+  color: white;
+  font-size: 15px;
+  outline: none;
+}
+
+.emp-input::placeholder {
+  color: #ddd;
+}
+
+.emp-select {
+  color: #000;
+}
+
+.emp-btn-group {
+  display: flex;
+  gap: 12px;
+}
+
+.emp-submit-btn {
+  padding: 10px 25px;
+  background: rgba(102, 126, 234, 0.95);
+  border: none;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.25s;
+}
+
+.emp-submit-btn:hover {
+  background: rgba(102, 126, 234, 1);
+}
+
+.emp-cancel-btn {
+  padding: 10px 25px;
+  background: rgba(107, 114, 128, 0.92);
+  border: none;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.25s;
+}
+
+.emp-cancel-btn:hover {
+  background: rgba(107, 114, 128, 1);
+}
+
+/* Table section */
+.emp-table-box {
+  background: rgba(255,255,255,0.10);
+  backdrop-filter: blur(18px);
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 6px 22px rgba(0,0,0,0.25);
+  overflow-x: auto;
+}
+
+.emp-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 600px;
+}
+
+.emp-table th {
+  background: rgba(255,255,255,0.28);
+  padding: 12px;
+  color: #0f172a;
+  font-weight: 700;
+  text-align: left;
+  letter-spacing: 0.5px;
+}
+
+.emp-table td {
+  padding: 12px;
+  border-bottom: 1px solid rgba(255,255,255,0.12);
+  color: #1786c2;
+  background: rgba(255,255,255,0.14);
+  text-align: left;
+}
+
+.emp-table tr:hover td {
+  background: rgba(255,255,255,0.22);
+  transition: .3s;
+}
+
+.emp-edit-btn {
+  padding: 7px 15px;
+  background: rgba(245, 158, 11, 0.92);
+  border: none;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+  margin-right: 6px;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  transition: 0.25s;
+}
+
+.emp-delete-btn {
+  padding: 7px 15px;
+  background: rgba(239, 68, 68, 0.92);
+  border: none;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  transition: 0.25s;
+}
+
+.emp-edit-btn:hover {
+  background: rgba(245, 158, 11, 1);
+}
+
+.emp-delete-btn:hover {
+  background: rgba(239, 68, 68, 1);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

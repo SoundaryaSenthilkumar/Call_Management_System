@@ -1,0 +1,203 @@
+/* MAIN CONTAINER */
+.assign-container {
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.10);
+  backdrop-filter: blur(20px);
+  border-radius: 18px;
+  color: #fff;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.28);
+  animation: fadeIn 0.4s ease-in-out;
+  max-width: 100%;
+  overflow-x: auto;
+}
+
+/* TITLE */
+.assign-title {
+  font-size: 28px;
+  margin-bottom: 22px;
+  color: #e0e7ff;
+  font-weight: 700;
+  letter-spacing: 0.6px;
+}
+
+/* SECTION */
+.assign-section {
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+/* SELECT DROPDOWN */
+.assign-select {
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  width: 280px;
+  background: rgba(255,255,255,0.18);
+  color: #149dcf;
+  backdrop-filter: blur(12px);
+  font-size: 15px;
+  outline: none;
+}
+
+/* ADD NEW CLIENT BUTTON */
+.assign-add-btn {
+  padding: 12px 22px;
+  background: rgba(16, 185, 129, 0.85);
+  border: none;
+  border-radius: 12px;
+  color: #fff;
+  cursor: pointer;
+  font-weight: 600;
+  margin-bottom: 25px;
+  font-size: 15px;
+  transition: 0.25s;
+}
+
+.assign-add-btn:hover {
+  background: rgba(16, 185, 129, 1);
+  transform: translateY(-2px);
+}
+
+/* FORM CARD */
+.assign-form {
+  background: rgba(255,255,255,0.14);
+  padding: 28px;
+  border-radius: 16px;
+  backdrop-filter: blur(20px);
+  margin-bottom: 22px;
+  color: #fff;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.18);
+}
+
+/* FORM INPUTS */
+.assign-input {
+  width: 100%;
+  padding: 14px;
+  margin-bottom: 14px;
+  background: rgba(255,255,255,0.18);
+  border: none;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 15px;
+  outline: none;
+}
+
+/* FORM BUTTONS */
+.assign-submit-btn {
+  padding: 10px 20px;
+  background: rgba(102, 126, 234, 0.95);
+  border: none;
+  border-radius: 10px;
+  color: #fff;
+  margin-right: 10px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.assign-submit-btn:hover {
+  background: rgba(102, 126, 234, 1);
+}
+
+.assign-cancel-btn {
+  padding: 10px 20px;
+  background: rgba(107, 114, 128, 0.92);
+  border: none;
+  border-radius: 10px;
+  color: #fff;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.assign-cancel-btn:hover {
+  background: rgba(107, 114, 128, 1);
+}
+
+/* TABLE SECTION */
+.assign-table-section {
+  backdrop-filter: blur(18px);
+  padding: 20px;
+  border-radius: 16px;
+  background: rgba(255,255,255,0.10);
+  box-shadow: 0 6px 22px rgba(0,0,0,0.25);
+  overflow-x: auto;
+}
+
+/* TABLE */
+.assign-table {
+  width: 100%;
+  border-collapse: collapse;
+  border-radius: 14px;
+  overflow: hidden;
+  margin-top: 20px;
+  min-width: 600px;
+}
+
+.assign-table th {
+  padding: 12px;
+  background: rgba(255,255,255,0.28);
+  color: #0f172a;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  text-align: left;
+}
+
+.assign-table td {
+  padding: 12px;
+  background: rgba(255,255,255,0.14);
+  border-bottom: 1px solid rgba(255,255,255,0.12);
+  color: #1786c2;
+  text-align: left;
+}
+
+.assign-table tr:hover td {
+  background: rgba(255,255,255,0.22);
+}
+
+/* ACTION BUTTONS */
+.assign-btn,
+.edit-btn,
+.delete-btn {
+  padding: 7px 15px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  color: #fff;
+  margin-right: 6px;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  transition: 0.25s;
+}
+
+/* SPECIFIC COLORS */
+.assign-btn {
+  background: rgba(102, 126, 234, 0.95);
+}
+.assign-btn:hover {
+  background: rgba(102, 126, 234, 1);
+}
+
+.edit-btn {
+  background: rgba(245, 158, 11, 0.92);
+}
+.edit-btn:hover {
+  background: rgba(245, 158, 11, 1);
+}
+
+.delete-btn {
+  background: rgba(239, 68, 68, 0.92);
+}
+.delete-btn:hover {
+  background: rgba(239, 68, 68, 1);
+}
+
+/* Fade in animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

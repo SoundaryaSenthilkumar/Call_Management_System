@@ -1,0 +1,69 @@
+.feedback-container {
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.10);
+  backdrop-filter: blur(20px);
+  border-radius: 18px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.28);
+  color: #fff;
+  animation: fadeIn 0.4s ease-in-out;
+  max-width: 100%;
+}
+
+.feedback-container h2 {
+  margin-bottom: 22px;
+  font-size: 28px;
+  font-weight: 700;
+  color: #e0e7ff;
+  letter-spacing: 0.6px;
+}
+
+.feedback-table-wrapper {
+  overflow-x: auto;
+}
+
+.feedback-table {
+  width: 100%;
+  border-collapse: collapse;
+  border-radius: 14px;
+  overflow: hidden;
+  margin-top: 20px;
+  min-width: 900px;
+}
+
+.feedback-table th {
+  padding: 12px;
+  background: rgba(255,255,255,0.28);
+  color: #0f172a;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  text-align: left;
+}
+
+.feedback-table td {
+  padding: 12px;
+  background: rgba(255,255,255,0.14);
+  border-bottom: 1px solid rgba(255,255,255,0.12);
+  color: #1786c2;
+  text-align: left;
+}
+
+.feedback-table tr:hover td {
+  background: rgba(255,255,255,0.22);
+}
+
+.no-feedback {
+  margin-top: 15px;
+  font-size: 16px;
+  color: #e0e7ff;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
